@@ -11,6 +11,7 @@ const noteSchema = mongoose.Schema( {
 	tienSuBoMe: { type: String, require: true },
 	tienSuAnhChi: { type: String, require: true },
 	thoiGianPhatHien: { type: String },
+	ngayKhamBenh: { type: String },
 	dieuTri: { type: String, require: true },
 	nhomThuoc: { type: Array },
 	hba1cLucDau: { type: String, require: true },
@@ -32,6 +33,7 @@ const noteSchema = mongoose.Schema( {
 	Protein: { type: String, require: true },
 	sieuAm: { type: String, require: true },
 	khamMat: { type: String, require: true },
+	ghiChu: { type: String, },
 }, 
   {
     collection: "note",
