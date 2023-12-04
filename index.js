@@ -18,7 +18,7 @@ app.get("/", (req, res) => {
   res.send("MERN project is successfully running");
 });
 
-const CONNECTION_URL = process.env.MONGO_CONNECTION_URL;
+const CONNECTION_URL = process.env.MONGO_CONNECTION_URL || "";
 
 const PORT = process.env.PORT || 5000;
 
